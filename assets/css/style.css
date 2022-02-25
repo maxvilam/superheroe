@@ -1,0 +1,13 @@
+.imagen{
+    width: 50%;
+    height: auto;
+    display:block;
+    margin:auto;
+}
+.ingresodatos{
+    text-align: left;
+    padding-left: 10%;
+}
+.detailshero{
+    display: flex;
+}
