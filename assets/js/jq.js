@@ -53,7 +53,7 @@ $(document).ready(() => {
               showInLegend: "true",
               legendText: "{label}",
               indexLabelFontSize: 16,
-              indexLabel: "{label} - {y}%",
+              indexLabel: "{label} - ({y})",
               dataPoints: [
                 { y: intelligence, label: "intelligence" },
                 { y: strength, label: "strength" },
@@ -70,17 +70,4 @@ $(document).ready(() => {
     });
   });
 });
-console.log(
-  "intelligence:" +
-    intelligence +
-    "/strength" +
-    strength +
-    "/speed" +
-    speed +
-    "durability:" +
-    durability +
-    "/power" +
-    power +
-    "/combat" +
-    combat
-);
+
