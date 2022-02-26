@@ -10,4 +10,25 @@
 }
 .detailshero{
     display: flex;
+    
+}
+.twocolumn{
+    display: flex;
+
+}
+.pad{
+    padding-left: 30px;
+    border-right: 1px solid #D3D3D3;
+    border-top: 1px solid #D3D3D3
+}
+.spec0{
+    padding-left: 10px;
+}
+.spec{
+    width: 95%;
+    padding-left: 10px;
+    border-top: 1px solid #D3D3D3;
+}
+.title2{
+    padding-left: 200px;
 }

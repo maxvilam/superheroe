@@ -16,17 +16,18 @@ $(document).ready(() => {
       success: (data) => {
         let superheroe = data.images;
         const imgHeroe = document.getElementById("imgHeroe");
-        document.getElementById("featureshero1").innerHTML=`<h4>SuperHero encontrado</h4><h5>${data.name}</h5><p>Conexiones: ${data.connections.groupAffiliation}</p> <h6>Publicado por: ${data.biography.publisher}</h6>`;
+        document.getElementById("featureshero").innerHTML=`<h4 class="title2">SuperHero encontrado</h4>`;
+        document.getElementById("featureshero1").innerHTML=`<h5>Nombre: ${data.name}</h5><p>Conexiones: ${data.connections.groupAffiliation}</p> <h6 class="spec0">Publicado por: ${data.biography.publisher}</h6>`;
         
-        document.getElementById("featureshero2").innerHTML=`<h6>Ocupación ${data.work.occupation}</h6>`;
+        document.getElementById("featureshero2").innerHTML=`<h6>Ocupación: ${data.work.occupation}</h6>`;
 
-        document.getElementById("featureshero3").innerHTML=`<h6>Primera Aparición ${data.biography.firstAppearance}</h6>`;
+        document.getElementById("featureshero3").innerHTML=`<h6>Primera Aparición: ${data.biography.firstAppearance}</h6>`;
 
-        document.getElementById("featureshero4").innerHTML=`<h6>Altura ${data.appearance.height[0]} - ${data.appearance.height[1]}</h6>`;
+        document.getElementById("featureshero4").innerHTML=`<h6>Altura: ${data.appearance.height[0]} - ${data.appearance.height[1]}</h6>`;
         
-        document.getElementById("featureshero5").innerHTML=`<h6>Peso ${data.appearance.weight[1]} - ${data.appearance.weight[1]}</h6>`;
+        document.getElementById("featureshero5").innerHTML=`<h6>Peso: ${data.appearance.weight[1]} - ${data.appearance.weight[1]}</h6>`;
         
-        document.getElementById("featureshero6").innerHTML=`<h6>Alianzas ${data.biography.aliases}</h6>`;
+        document.getElementById("featureshero6").innerHTML=`<h6>Alianzas: ${data.biography.aliases}</h6>`;
 
         imgHeroe.innerHTML = `<img src="${superheroe.md}" alt="">`;
         
